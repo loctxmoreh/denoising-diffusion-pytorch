@@ -1,0 +1,12 @@
+name: ddpm
+dependencies:
+    - python=3.8
+    - pip
+    - pip:
+        - torch==1.10.0+cpuonly.moreh0.2.0
+        - moreh-driver==0.2.0
+        - -e .
+
+# conda env create -f hacenv.yml
+# conda activate ddpm
+# update-moreh --force --driver-only --target 0.2.0
