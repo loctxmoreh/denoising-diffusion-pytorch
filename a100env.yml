@@ -1,0 +1,12 @@
+name: ddpm
+channels:
+    - pytorch
+    - conda-forge
+dependencies:
+    - python=3.8
+    - pytorch=1.12.1
+    - torchvision=0.13.1
+    - cudatoolkit=11.6
+    - pip
+    - pip:
+        - -e .
