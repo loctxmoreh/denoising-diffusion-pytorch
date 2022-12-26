@@ -411,10 +411,10 @@ class GaussianDiffusion1D(nn.Module):
         sampling_timesteps = None,
         loss_type = 'l1',
         objective = 'pred_noise',
-        beta_schedule = 'cosine',
+        beta_schedule = 'sigmoid',
         p2_loss_weight_gamma = 0.,
         p2_loss_weight_k = 1,
-        ddim_sampling_eta = 1.
+        ddim_sampling_eta = 0.
     ):
         super().__init__()
         self.model = model
